@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+      }
+      #search_input{
+        border: 2px solid #017bfe;
+        width: 75%;
+        height: 35px;
+        border-radius: 15px;
+        font-size: 17px;
+        font-weight: bold;
+
+      }
+      
+      /* nav{
+        border: 1px solid #017bfe;
+      } */
+      #head{
+        text-decoration: none;
+        color: #017bfe;
+        font-size: 30px;
+      }
+
+      #container{
+        /* border: 1px solid blue; */
+        display: flex;
+        height: auto;
+
+      }
+      #sidebar{
+        /* border: 1px solid red; */
+        width: 15%;
+
+
+      }
+      #results{
+        /* border: 1px solid greenyellow; */
+        width: 85%;
+        height: auto;
+        
+      }
+        #in,#ch,#us,#uk,#nz{
+        background-color: teal;
+        width: 70%;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      #country{
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+    <div id="navbar_div"></div>
+
+    <div id="container">
+
+      <div id="sidebar">
+        <h1 class="country" id="country">Country</h1>
+        <h3  class="country" id="in">India</h3>
+        <h3  class="country" id="ch">China</h3>
+        <h3  class="country" id="us">USA</h3>
+        <h3  class="country" id="uk">United Kingdom</h3>
+        <h3  class="country" id="nz">New Zealand</h3>
+        
+      </div>
+      <div id="results"></div>
+
+
+    </div>
+     
+  </body>
+</html>
+<script src="./scripts/index.js" type="module"></script>
