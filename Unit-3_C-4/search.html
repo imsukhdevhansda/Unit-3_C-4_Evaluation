@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search results</title>
+    <style>
+
+*{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+      }
+      #search_input{
+        border: 2px solid #017bfe;
+        width: 75%;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: bold;
+
+      }
+      
+    
+      #head{
+        text-decoration: none;
+        color: #017bfe;
+        font-size: 30px;
+      }
+
+      /* section- 1 */
+
+    #results{
+      /* border: 1px solid red; */
+      width: 80%;
+      margin: auto;
+    }
+      #sidebar{
+        /* border: 1px solid red; */
+        width: 15%;
+
+
+      }
+      /* #results{
+        width: 85%;
+        
+      } */
+        #in,#ch,#us,#uk,#nz{
+        background-color: teal;
+        width: 70%;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      #country{
+        margin-left: 20px;
+      }
+      #headimg{
+        width: 100%;
+        height: 100%;
+        align-self:center ;
+        
+      }
+      .news{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        height: 200px;
+      }
+      #ibox1{
+        /* border: 1px solid blue; */
+        width: 20%;
+
+      }
+      #ibox2{
+        /* border: 1px solid black; */
+        width: 80%;
+
+      }
+
+      #news_head,#dis{
+        margin-left: 3%;
+      }
+      #news_head{
+        color: #017bfe;
+        font-size: 30px;
+      }
+      #dis{
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Same navbar with same functionality  -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+
+    <div id="navbar_div"></div>
+    <div id="results"></div>
+  </body>
+</html>
+<script src="./scripts/search.js" type="module"></script>
